@@ -1,10 +1,11 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
 def homepage(request, *args, **kwargs):
-    return HttpResponse("wELCOME TO OUR HOME PAGE")
+    return render(request, "index.html")
 
-def about(reauest, *args, **kwargs):
-    return HttpResponse("Welcome to our homepage")
+def about(request, *args, **kwargs):
+    return render(request, "about.html")
 
 x = "Welcome home"

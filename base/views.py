@@ -7,3 +7,5 @@ def homepage(request, *args, **kwargs):
 
 def about(reauest, *args, **kwargs):
     return HttpResponse("Welcome to our homepage")
+
+x = "Welcome home"

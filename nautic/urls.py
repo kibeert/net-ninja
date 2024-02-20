@@ -20,7 +20,7 @@ from .import views
 
 
 urlpatterns = [
-    path('blog/', include('article.urls')),
+    path('', include('articles.urls')),
     path('', views.homepage, name='home'),
     path('about/', views.about, name='about'),
     

@@ -8,5 +8,20 @@
 <body>
     <h1>Article lists</h1>
     <p>This are my articles</p>
+    <p>{{ name}}</p>
+    <p>{{ slug}}</p>
+    <p>{{ body}}</p>
+    <p>{{ date}}</p>
+    <p>{{ article }}</p>
+    <div class="articles">
+        {% for article in articles %}
+            <div class="article">
+                <h2><a href="">{{article.title}}</a></h2>
+                <p>{{ article.date }}</p>
+                <p>{{ article.date }}</p>
+
+            </div>
+        {% endfor %}
+    </div>
 </body>
 </html>

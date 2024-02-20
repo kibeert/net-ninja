@@ -21,8 +21,7 @@ from .import views
 
 urlpatterns = [
     path('', include('articles.urls')),
-    path('', views.homepage, name='home'),
+    path('home/', views.homepage, name='home'),
     path('about/', views.about, name='about'),
-    
     path('admin/', admin.site.urls),
 ]

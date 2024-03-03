@@ -1,15 +1,7 @@
-{% load static  %}
+{% extends 'base.html' %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-</head>
-<body>
-    <h1>Article lists</h1>
+{% block content %}
+<h1>Article lists</h1>
     <p>This are my articles</p>
     <p>{{ name}}</p>
     <p>{{ slug}}</p>
@@ -26,6 +18,5 @@
             </div>
         {% endfor %}
     </div>
-    
-</body>
-</html>
+
+    {% endblock %}

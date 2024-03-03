@@ -8,5 +8,5 @@ def articleview(request, *args, **kwargs):
     
     return render(request, "articles/articles.html", {'articles':articles})
 
-def article_detail(request,slug, *args, **kwargs):
-    return HttpResponse(slug)
+def article_detail(request, *args, **kwargs):
+    return HttpResponse("Hello world")

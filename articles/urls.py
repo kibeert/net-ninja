@@ -8,9 +8,7 @@ app_name = 'articles'
 
 urlpatterns = [
     path('article/', views.articleview, name='articles'),
-    path('slug/', views.article_detail ,name="article-detail"),
-    path('', views.articleview, name="list"),
-    path('<slug>/', views.article_detail, name="detail")
+   
 
     
     

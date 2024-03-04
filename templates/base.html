@@ -11,6 +11,7 @@
 <body>
     <div class="wrapper">
         <h1><a href="{% url 'articles' %}"><img src="{% static 'logo.png' %}" alt=""></a></h1>
+        <h1><a href="{% url 'articles:list' %}"><img src="{% static 'Django.png' %}" /></a></h1>
         {% block content %}
         {% endblock %}
     </div>
